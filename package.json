@@ -1,0 +1,24 @@
+{
+    "name": "kozeki",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "bun scripts/run dev",
+        "build": "bun scripts/run build",
+        "test": "bun scripts/run test",
+        "test:unit": "bun scripts/run test:unit",
+        "coverage": "bun scripts/run coverage",
+        "test:e2e": "bun scripts/run test:e2e",
+        "lint": "bun scripts/run lint",
+        "docker": "bun scripts/run docker",
+        "storybook": "bun scripts/run storybook"
+    },
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@types/bun": "^1.2.11",
+        "concurrently": "^9.1.2"
+    }
+}
