@@ -2,7 +2,7 @@ import '@ui/global.css'
 
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Doro } from '.'
+import { Doro, type DoroProps } from '.'
 
 const meta: Meta<typeof Doro> = {
     title: 'Kozeki/doro',
@@ -11,6 +11,24 @@ const meta: Meta<typeof Doro> = {
 
 export default meta
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<DoroProps>
 
-export const Primary: Story = {}
+export const Default: Story = {}
+
+export const Small: Story = {
+    args: {
+        variant: 'small'
+    }
+}
+
+export const Medium: Story = {
+    args: {
+        variant: 'medium'
+    }
+}
+
+export const Large: Story = {
+    args: {
+        variant: 'large'
+    }
+}
