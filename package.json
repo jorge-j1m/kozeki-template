@@ -18,7 +18,7 @@
         "packages/*"
     ],
     "devDependencies": {
-        "@types/bun": "^1.2.11",
-        "concurrently": "^9.1.2"
+        "@types/bun": "^1.2.20",
+        "concurrently": "^9.2.0"
     }
 }
